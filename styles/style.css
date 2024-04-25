@@ -1,1 +1,123 @@
-/* место для вашего кода */
+/* Common styles */
+
+body {
+  font-size: 20px;
+}
+
+.wrap-span {
+  display: block;
+}
+
+.underline-text {
+  text-decoration: underline;
+}
+
+.text-to-center{
+  text-align: center;
+}
+
+.text-to-right{
+  text-align: right;
+}
+
+/* Header styles */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 92px 24px 96px;
+  padding: 5px 27px;
+  font-size: 18px;
+  position: relative;
+  width: 1052px;
+}
+
+.header__menu-list {
+  list-style-type: circle;
+  display: flex;
+  gap: 32px;
+}
+
+.header__menu-list-item:first-child {
+  list-style: none;
+}
+
+.header img {
+  width: 135px;
+  position: absolute;
+  left: 459px;
+}
+
+.letter-spacing {
+  letter-spacing: 0.01em;
+}
+
+.header__contacts {
+  line-height: 135%;
+  width: 240px;
+}
+
+/* Cover styles */
+
+.cover{
+  padding: 165px 50px 50px;
+  background: rgba(0 0 0 / 0.6) url(../images/cover.jpg);
+  border: 1px solid black;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 757px;
+  color: white;
+  background-blend-mode: darken;
+}
+
+.cover__heading{
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 100%;
+  letter-spacing: 0.3em;
+}
+
+.cover__heading-first-row{
+  line-height: 115%;
+}
+
+.bigger-spacing{
+  letter-spacing: 0.6em;
+}
+
+h1 span:last-child span:last-child{
+  letter-spacing: 0;
+}
+
+.cover__heading .text-to-center, .text-to-right{
+  margin-top: 20px;
+}
+
+.cover__caption-button{
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 133px;
+  margin-left: 28px;
+}
+
+.cover__caption{
+  line-height: 127%;
+  font-weight: 400;
+  word-spacing: 0.8em;
+}
+
+.cover__caption_span{
+  letter-spacing: 1.2em;
+}
+
+.cover__button{
+  padding: 12px 32px 11px 31px;
+  border: solid 1px white;
+  text-decoration: none;
+}
