@@ -1,9 +1,5 @@
 /* Common classes */
 
-body {
-  font-size: 20px;
-}
-
 .wrap-span {
   display: block;
 }
@@ -24,8 +20,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 1052px;
-  margin: 92px 24px 93px;
+  max-width: 1052px;
+  margin: 92px 24px 86px;
   padding: 5px 27px;
   font-size: 18px;
   text-underline-offset: 5px;
@@ -46,16 +42,17 @@ body {
 }
 
 .header__logo {
-  position: absolute;
-  top: 0;
-  left: 459px;
   display: block;
-  width: 135px;
+  max-width: 136px;
+  margin-top: -5px;
+  margin-right: 147px;
 }
 
-.header__address {
-  width: 240px;
+.address {
+  max-width: 240px;
   line-height: 135%;
+  font-style: normal;
+  padding-right: 34px;
 }
 
 .address {
@@ -79,10 +76,6 @@ body {
   background-blend-mode: darken;
 }
 
-.cover * {
-  position: relative;
-}
-
 .overlay {
   position: absolute;
   inset: 0;
@@ -93,6 +86,7 @@ body {
 }
 
 .cover__title {
+  position: relative;
   z-index: 1;
   font-weight: bold;
   font-size: 100px;
@@ -100,7 +94,7 @@ body {
   letter-spacing: 0.3em;
 }
 
-.cover__title-first-row {
+.line-height-extended{
   line-height: 115%;
 }
 
@@ -118,6 +112,7 @@ body {
 }
 
 .cover__description {
+  position: relative;
   z-index: 1;
   display: flex;
   justify-content: space-between;
@@ -142,7 +137,7 @@ body {
   border: solid 1px white;
   padding: 12px 32px;
   color: white;
-  font-family: Raleway;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 22px;
   text-decoration: none;
   text-transform: uppercase;
@@ -241,12 +236,14 @@ body {
 }
 
 .about__column:first-child {
-  padding-top: 5px;
-  padding-left: 70px;
+  padding-top: 4px;
+  padding-left: 71px;
 }
 
 .about__column:last-child {
-  padding: 7px 24px 0 16px;
+  max-width: 693px;
+  padding-top: 6px;
+  padding-left: 16px;
 }
 
 .about__logo {
@@ -286,11 +283,6 @@ body {
   padding: 0 50px 88px;
   font-size: 18px;
   text-underline-offset: 5px;
-}
-
-.footer__address {
-  width: 240px;
-  line-height: 135%;
 }
 
 .footer__menu-list {
